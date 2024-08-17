@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <title>RicHard's Website</title>
+    <link rel="stylesheet" href="./style/styles.css">
+  </head>
+  <body>
+    <section id="home">
+    <nav>
+        <h2>RicHard</h2>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#project">Projects</a></li>
+            <li><a href="">Contact me</a></li>
+            <button><a href="./images/Richard Manzi Cv.pdf" download class="download-cv-btn" target="_blank">Download CV</a></button>
+        </ul>
+    </nav>
+
+    <main class="header">
+        <h1>Hello, I'm MANZI Richard<br>
+            <span
+               class="txt-rotate"
+               data-period="2000"
+               data-rotate='[ "Graphic Designer", "UI/UX Designer", "Web Designer" ]'></span>
+          </h1>
+    </main>
+   </section>
+
+   <section id="about">
+     <h2>About Me</h2>
+      <div class="text">
+        <p>I'm Manzi Richard, a passionate Graphic Designer<br>
+         with an advanced diploma from the Integrated Polytechnic <br>
+         Regional College. I specialize in branding, UI/UX, and web <br>
+         design, creating visually compelling and user-focused designs.<br>
+         My approach is all about blending creativity with functionality <br>
+         to bring ideas to life. I'm always exploring new trends and techniques <br>
+         to deliver fresh, impactful designs.</p>
+
+         <img src=".//images/about.jpg" alt="">
+      </div>
+   </section>
+
+   <section id="project" class="main swiper mySwiper">
+    <div class="wrapper swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="./images/pizza.png" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">pizza website.</span>
+          <h2>
+            A timeless favorite<br>
+             with fresh mozzarella.
+            
+          </h2>
+          <a href="https://www.figma.com/proto/lbyJu3F6okFGtlYqP8nagd/Pizzaluxe?node-id=17-14&t=CU5WJXj1fLU7X1gP-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" class="button" target="_blank">View more</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./images/shoes.png" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">shoe selling website.</span>
+          <h2>
+            Step into Style,<br>
+             Walk with Confidence
+          </h2>
+          <a href="https://www.figma.com/proto/R2Hwm8o6ZzhvPrcE6cgs3e/Elite-feet-store?node-id=2-2&t=mG28gUMZ1HRW6le1-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1" class="button" target="_blank">View more</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./images/studio.png" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">streaming website.</span>
+          <h2>
+            Dive Into the <br>
+            World of Streaming
+          </h2>
+          <a href="https://www.figma.com/proto/ErB4TvbVftM4iEoaxHn2VT/TuneRythm?node-id=26-66&t=uIvdkxd4pTSBU96o-1&scaling=scale-down&content-scaling=fixed&page-id=5%3A8" class="button" target="_blank">View more</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./images/gadgets.png" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Electronic gadgets website.</span>
+          <h2>
+            Discover the Future<br>
+             of Technology Today
+          </h2>
+          <a href="https://www.figma.com/proto/16w0qAlEJfrfs51QY8cWRD/Ultra-Gadgets.?node-id=1-2&t=5kObzNyxDmz6L1Km-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2" class="button" target="_blank">View more</a>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img src="./images/model.png" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">clothe brand website.</span>
+          <h2>
+            Showcasing Beauty<br>
+             in Every Pose
+          </h2>
+          <a href="https://www.figma.com/proto/QuRmrEFCdmNSVvht0Axnoj/Elegantix-Pt1?t=cMV62pFwaIDPNeTt-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=1-2&starting-point-node-id=1%3A2" class="button" target="_blank">View more</a>
+        </div>
+      </div>
+      
+    </div>
+
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('active');
+        });
+
+    </script>
+
+<script>
+    var TxtRotate = function(el, toRotate, period) {
+  this.toRotate = toRotate;
+  this.el = el;
+  this.loopNum = 0;
+  this.period = parseInt(period, 10) || 2000;
+  this.txt = '';
+  this.tick();
+  this.isDeleting = false;
+};
+
+TxtRotate.prototype.tick = function() {
+  var i = this.loopNum % this.toRotate.length;
+  var fullTxt = this.toRotate[i];
+
+  if (this.isDeleting) {
+    this.txt = fullTxt.substring(0, this.txt.length - 1);
+  } else {
+    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  }
+
+  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+  var that = this;
+  var delta = 300 - Math.random() * 100;
+
+  if (this.isDeleting) { delta /= 2; }
+
+  if (!this.isDeleting && this.txt === fullTxt) {
+    delta = this.period;
+    this.isDeleting = true;
+  } else if (this.isDeleting && this.txt === '') {
+    this.isDeleting = false;
+    this.loopNum++;
+    delta = 500;
+  }
+
+  setTimeout(function() {
+    that.tick();
+  }, delta);
+};
+
+window.onload = function() {
+  var elements = document.getElementsByClassName('txt-rotate');
+  for (var i=0; i<elements.length; i++) {
+    var toRotate = elements[i].getAttribute('data-rotate');
+    var period = elements[i].getAttribute('data-period');
+    if (toRotate) {
+      new TxtRotate(elements[i], JSON.parse(toRotate), period);
+    }
+  }
+  // INJECT CSS
+  var css = document.createElement("style");
+  css.type = "text/css";
+  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+  document.body.appendChild(css);
+};
+</script>
+  </body>
+</html>
